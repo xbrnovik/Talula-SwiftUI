@@ -9,12 +9,14 @@
 import SwiftUI
 
 struct AboutView : View {
+    let highMassLevel: String = Formatter.numberFormatter.localeRounded.string(from: Map.highMassLevel as NSNumber) ?? Map.highMassLevel.description
+    let lowMassLevel: String = Formatter.numberFormatter.localeRounded.string(from: Map.lowMassLevel as NSNumber) ?? Map.lowMassLevel.description
     
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                      Text("This application shows the list of fallen meteorites on Earth since 2011 and also its count. The meteorites are sorted by their masses in descending order. Source data is obtained from NASA and it is updated periodically. In the detail of every fallen meteorite, the user can see its position on map.")
+                    Text("This application shows the list of fallen meteorites on Earth since 2011 and also its count. The meteorites are sorted by their masses in descending order. Source data is obtained from NASA and it is updated periodically. In the detail of every fallen meteorite, the user can see its position on map.")
                           .lineLimit(nil)
                           .fixedSize(horizontal: false, vertical: true)
                     HStack {
@@ -22,20 +24,20 @@ struct AboutView : View {
                             Image("BigMeteorite")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: UIIconSize.medium, height:UIIconSize.medium, alignment: .center)
+                                .frame(width: IconSize.medium, height: IconSize.medium, alignment: .center)
                             Image("SmallMeteorite")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: UIIconSize.medium, height:UIIconSize.medium, alignment: .center)
+                                .frame(width: IconSize.medium, height: IconSize.medium, alignment: .center)
                             Image("OtherMeteorite")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: UIIconSize.medium, height:UIIconSize.medium, alignment: .center)
+                                .frame(width: IconSize.medium, height: IconSize.medium, alignment: .center)
                         }
                         VStack(alignment: .leading, spacing: 20) {
-                          Text("This icon describes meteorites with mass value bigger than \(Map.highMassLevel) g.")
+                          Text("This icon describes meteorites with mass value bigger than \(highMassLevel) g.")
                               .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
-                          Text("This icon describes with mass value smaller than \(Map.highMassLevel) g and bigger than \(Map.lowMassLevel) g.")
+                          Text("This icon describes with mass value smaller than \(highMassLevel) g and bigger than \(lowMassLevel) g.")
                               .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                           Text("This icon describes other types of meteorites.")
                               .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
@@ -51,11 +53,11 @@ struct AboutView : View {
                             Image("InformationGmail")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: UIIconSize.medium, height:UIIconSize.mini, alignment: .center)
+                                .frame(width: IconSize.medium, height: IconSize.mini, alignment: .center)
                             Image("InformationLinkedIn")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: UIIconSize.medium, height:UIIconSize.mini, alignment: .center)
+                                .frame(width: IconSize.medium, height: IconSize.mini, alignment: .center)
                         }
                         VStack(alignment: .leading, spacing: 20) {
                             Text("dia.brnovikova@gmail.com")

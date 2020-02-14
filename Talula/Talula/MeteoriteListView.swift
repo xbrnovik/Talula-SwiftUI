@@ -20,12 +20,12 @@ struct MeteoriteListView: View {
         NavigationView {
             List {
                 Section(footer: ListFooter()) {
-                    ForEach(meteoriteStore.cities) { meteorite in
-                        MeteoriteRow(meteorite: meteorite)
+                    ForEach(meteoriteStore.meteoriteModels) { model in
+                        MeteoriteRow(model: model)
                     }
                 }
             }
-            .environment(\.defaultMinListRowHeight, 40)
+            .environment(\.defaultMinListRowHeight, RowSize.small)
             .navigationBarItems(trailing: infoButton)
             .navigationBarTitle(Text("Meteorites"))
         }
@@ -54,7 +54,7 @@ struct ListFooter: View {
     @EnvironmentObject var meteoriteStore: MeteoriteStore
     
     var body: some View {
-        Text(" \(meteoriteStore.cities.count) meteorites")
+        Text(" \(meteoriteStore.meteoriteModels.count) meteorites")
     }
 }
 

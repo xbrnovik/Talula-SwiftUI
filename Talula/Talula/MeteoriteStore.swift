@@ -11,6 +11,6 @@ import Combine
 
 class MeteoriteStore: ObservableObject {
         
-    @Published var cities: [Meteorite] = [Meteorite()]
+    @Published var meteoriteModels: [MeteoriteModel] = []
     
 }

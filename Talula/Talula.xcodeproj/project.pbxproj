@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		234460EE23F62DF10013B353 /* MeteoriteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234460ED23F62DF10013B353 /* MeteoriteMapView.swift */; };
 		234460F023F633930013B353 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234460EF23F633930013B353 /* MapView.swift */; };
-		234460F223F662230013B353 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234460F123F662230013B353 /* TextView.swift */; };
 		23B84F2E23F5EDF8000A3D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F2D23F5EDF8000A3D13 /* AppDelegate.swift */; };
 		23B84F3023F5EDF8000A3D13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F2F23F5EDF8000A3D13 /* SceneDelegate.swift */; };
-		23B84F3323F5EDF8000A3D13 /* Talula.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F3123F5EDF8000A3D13 /* Talula.xcdatamodeld */; };
 		23B84F3523F5EDF8000A3D13 /* MeteoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F3423F5EDF8000A3D13 /* MeteoriteListView.swift */; };
 		23B84F3A23F5EDFB000A3D13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B84F3923F5EDFB000A3D13 /* Preview Assets.xcassets */; };
 		23B84F3D23F5EDFB000A3D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B84F3B23F5EDFB000A3D13 /* LaunchScreen.storyboard */; };
 		23B84F4823F5EDFC000A3D13 /* TalulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F4723F5EDFC000A3D13 /* TalulaTests.swift */; };
 		23B84F5423F5F827000A3D13 /* MeteoriteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F5323F5F827000A3D13 /* MeteoriteRow.swift */; };
-		23B84F5623F5FB19000A3D13 /* Meteorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F5523F5FB19000A3D13 /* Meteorite.swift */; };
+		23B84F5623F5FB19000A3D13 /* MeteoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F5523F5FB19000A3D13 /* MeteoriteModel.swift */; };
 		23B84F5823F5FB60000A3D13 /* MeteoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F5723F5FB60000A3D13 /* MeteoriteStore.swift */; };
-		23B84F5D23F5FE0A000A3D13 /* Talula.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F5B23F5FE0A000A3D13 /* Talula.xcdatamodeld */; };
 		23B84F5F23F5FFD2000A3D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B84F5E23F5FFD2000A3D13 /* Assets.xcassets */; };
 		23B84F6123F60579000A3D13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F6023F60579000A3D13 /* Constants.swift */; };
 		23B84F6323F61BC9000A3D13 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B84F6223F61BC9000A3D13 /* AboutView.swift */; };
+		23C70F5023F6BD1100C8E060 /* DataRefreshOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4323F6BD1100C8E060 /* DataRefreshOperation.swift */; };
+		23C70F5123F6BD1100C8E060 /* DataSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4423F6BD1100C8E060 /* DataSync.swift */; };
+		23C70F5223F6BD1100C8E060 /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4523F6BD1100C8E060 /* CoreDataContainer.swift */; };
+		23C70F5323F6BD1100C8E060 /* SourceDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4723F6BD1100C8E060 /* SourceDataDownloader.swift */; };
+		23C70F5423F6BD1100C8E060 /* Talula.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4823F6BD1100C8E060 /* Talula.xcdatamodeld */; };
+		23C70F5523F6BD1100C8E060 /* MeteoriteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4A23F6BD1100C8E060 /* MeteoriteResponse.swift */; };
+		23C70F5623F6BD1100C8E060 /* SourceDataSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4B23F6BD1100C8E060 /* SourceDataSync.swift */; };
+		23C70F5723F6BD1100C8E060 /* Meteorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4C23F6BD1100C8E060 /* Meteorite+CoreDataProperties.swift */; };
+		23C70F5823F6BD1100C8E060 /* MeteoriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4D23F6BD1100C8E060 /* MeteoriteStorage.swift */; };
+		23C70F5923F6BD1100C8E060 /* Meteorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4E23F6BD1100C8E060 /* Meteorite+CoreDataClass.swift */; };
+		23C70F5A23F6BD1100C8E060 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F4F23F6BD1100C8E060 /* TaskScheduler.swift */; };
+		23C70F5C23F6C0C700C8E060 /* MeteoriteFetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C70F5B23F6C0C700C8E060 /* MeteoriteFetchedResultsControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +48,9 @@
 /* Begin PBXFileReference section */
 		234460ED23F62DF10013B353 /* MeteoriteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteMapView.swift; sourceTree = "<group>"; };
 		234460EF23F633930013B353 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		234460F123F662230013B353 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		23B84F2A23F5EDF8000A3D13 /* Talula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B84F2D23F5EDF8000A3D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B84F2F23F5EDF8000A3D13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23B84F3223F5EDF8000A3D13 /* Talula.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talula.xcdatamodel; sourceTree = "<group>"; };
 		23B84F3423F5EDF8000A3D13 /* MeteoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteListView.swift; sourceTree = "<group>"; };
 		23B84F3923F5EDFB000A3D13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23B84F3C23F5EDFB000A3D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,12 +59,23 @@
 		23B84F4723F5EDFC000A3D13 /* TalulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalulaTests.swift; sourceTree = "<group>"; };
 		23B84F4923F5EDFC000A3D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23B84F5323F5F827000A3D13 /* MeteoriteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteRow.swift; sourceTree = "<group>"; };
-		23B84F5523F5FB19000A3D13 /* Meteorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteorite.swift; sourceTree = "<group>"; };
+		23B84F5523F5FB19000A3D13 /* MeteoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteModel.swift; sourceTree = "<group>"; };
 		23B84F5723F5FB60000A3D13 /* MeteoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteStore.swift; sourceTree = "<group>"; };
-		23B84F5C23F5FE0A000A3D13 /* Talula.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talula.xcdatamodel; sourceTree = "<group>"; };
 		23B84F5E23F5FFD2000A3D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23B84F6023F60579000A3D13 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23B84F6223F61BC9000A3D13 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		23C70F4323F6BD1100C8E060 /* DataRefreshOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRefreshOperation.swift; sourceTree = "<group>"; };
+		23C70F4423F6BD1100C8E060 /* DataSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSync.swift; sourceTree = "<group>"; };
+		23C70F4523F6BD1100C8E060 /* CoreDataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
+		23C70F4723F6BD1100C8E060 /* SourceDataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceDataDownloader.swift; sourceTree = "<group>"; };
+		23C70F4923F6BD1100C8E060 /* Talula.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talula.xcdatamodel; sourceTree = "<group>"; };
+		23C70F4A23F6BD1100C8E060 /* MeteoriteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoriteResponse.swift; sourceTree = "<group>"; };
+		23C70F4B23F6BD1100C8E060 /* SourceDataSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceDataSync.swift; sourceTree = "<group>"; };
+		23C70F4C23F6BD1100C8E060 /* Meteorite+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Meteorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23C70F4D23F6BD1100C8E060 /* MeteoriteStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoriteStorage.swift; sourceTree = "<group>"; };
+		23C70F4E23F6BD1100C8E060 /* Meteorite+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Meteorite+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23C70F4F23F6BD1100C8E060 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
+		23C70F5B23F6C0C700C8E060 /* MeteoriteFetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteFetchedResultsControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,18 +120,20 @@
 				23B84F2D23F5EDF8000A3D13 /* AppDelegate.swift */,
 				23B84F2F23F5EDF8000A3D13 /* SceneDelegate.swift */,
 				23B84F6023F60579000A3D13 /* Constants.swift */,
+				23C70F4523F6BD1100C8E060 /* CoreDataContainer.swift */,
+				23C70F4323F6BD1100C8E060 /* DataRefreshOperation.swift */,
+				23C70F4423F6BD1100C8E060 /* DataSync.swift */,
+				23C70F4F23F6BD1100C8E060 /* TaskScheduler.swift */,
+				23C70F4623F6BD1100C8E060 /* Storage */,
+				23B84F5723F5FB60000A3D13 /* MeteoriteStore.swift */,
 				23B84F3423F5EDF8000A3D13 /* MeteoriteListView.swift */,
 				23B84F5323F5F827000A3D13 /* MeteoriteRow.swift */,
 				234460ED23F62DF10013B353 /* MeteoriteMapView.swift */,
 				234460EF23F633930013B353 /* MapView.swift */,
 				23B84F6223F61BC9000A3D13 /* AboutView.swift */,
-				234460F123F662230013B353 /* TextView.swift */,
-				23B84F5723F5FB60000A3D13 /* MeteoriteStore.swift */,
-				23B84F5523F5FB19000A3D13 /* Meteorite.swift */,
-				23B84F5B23F5FE0A000A3D13 /* Talula.xcdatamodeld */,
+				23B84F5523F5FB19000A3D13 /* MeteoriteModel.swift */,
 				23B84F3B23F5EDFB000A3D13 /* LaunchScreen.storyboard */,
 				23B84F3E23F5EDFB000A3D13 /* Info.plist */,
-				23B84F3123F5EDF8000A3D13 /* Talula.xcdatamodeld */,
 				23B84F5E23F5FFD2000A3D13 /* Assets.xcassets */,
 				23B84F3823F5EDFB000A3D13 /* Preview Content */,
 			);
@@ -135,6 +155,21 @@
 				23B84F4923F5EDFC000A3D13 /* Info.plist */,
 			);
 			path = TalulaTests;
+			sourceTree = "<group>";
+		};
+		23C70F4623F6BD1100C8E060 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				23C70F4723F6BD1100C8E060 /* SourceDataDownloader.swift */,
+				23C70F4823F6BD1100C8E060 /* Talula.xcdatamodeld */,
+				23C70F4A23F6BD1100C8E060 /* MeteoriteResponse.swift */,
+				23C70F4B23F6BD1100C8E060 /* SourceDataSync.swift */,
+				23C70F4D23F6BD1100C8E060 /* MeteoriteStorage.swift */,
+				23C70F5B23F6C0C700C8E060 /* MeteoriteFetchedResultsControllerDelegate.swift */,
+				23C70F4C23F6BD1100C8E060 /* Meteorite+CoreDataProperties.swift */,
+				23C70F4E23F6BD1100C8E060 /* Meteorite+CoreDataClass.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,18 +274,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				234460F023F633930013B353 /* MapView.swift in Sources */,
-				23B84F5623F5FB19000A3D13 /* Meteorite.swift in Sources */,
+				23B84F5623F5FB19000A3D13 /* MeteoriteModel.swift in Sources */,
+				23C70F5423F6BD1100C8E060 /* Talula.xcdatamodeld in Sources */,
+				23C70F5523F6BD1100C8E060 /* MeteoriteResponse.swift in Sources */,
 				23B84F6323F61BC9000A3D13 /* AboutView.swift in Sources */,
-				234460F223F662230013B353 /* TextView.swift in Sources */,
-				23B84F5D23F5FE0A000A3D13 /* Talula.xcdatamodeld in Sources */,
+				23C70F5623F6BD1100C8E060 /* SourceDataSync.swift in Sources */,
 				23B84F2E23F5EDF8000A3D13 /* AppDelegate.swift in Sources */,
+				23C70F5923F6BD1100C8E060 /* Meteorite+CoreDataClass.swift in Sources */,
 				23B84F3023F5EDF8000A3D13 /* SceneDelegate.swift in Sources */,
+				23C70F5023F6BD1100C8E060 /* DataRefreshOperation.swift in Sources */,
+				23C70F5323F6BD1100C8E060 /* SourceDataDownloader.swift in Sources */,
+				23C70F5223F6BD1100C8E060 /* CoreDataContainer.swift in Sources */,
 				23B84F6123F60579000A3D13 /* Constants.swift in Sources */,
+				23C70F5C23F6C0C700C8E060 /* MeteoriteFetchedResultsControllerDelegate.swift in Sources */,
 				23B84F5823F5FB60000A3D13 /* MeteoriteStore.swift in Sources */,
+				23C70F5A23F6BD1100C8E060 /* TaskScheduler.swift in Sources */,
+				23C70F5723F6BD1100C8E060 /* Meteorite+CoreDataProperties.swift in Sources */,
 				234460EE23F62DF10013B353 /* MeteoriteMapView.swift in Sources */,
+				23C70F5123F6BD1100C8E060 /* DataSync.swift in Sources */,
 				23B84F3523F5EDF8000A3D13 /* MeteoriteListView.swift in Sources */,
 				23B84F5423F5F827000A3D13 /* MeteoriteRow.swift in Sources */,
-				23B84F3323F5EDF8000A3D13 /* Talula.xcdatamodeld in Sources */,
+				23C70F5823F6BD1100C8E060 /* MeteoriteStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,22 +559,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		23B84F3123F5EDF8000A3D13 /* Talula.xcdatamodeld */ = {
+		23C70F4823F6BD1100C8E060 /* Talula.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				23B84F3223F5EDF8000A3D13 /* Talula.xcdatamodel */,
+				23C70F4923F6BD1100C8E060 /* Talula.xcdatamodel */,
 			);
-			currentVersion = 23B84F3223F5EDF8000A3D13 /* Talula.xcdatamodel */;
-			path = Talula.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		23B84F5B23F5FE0A000A3D13 /* Talula.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				23B84F5C23F5FE0A000A3D13 /* Talula.xcdatamodel */,
-			);
-			currentVersion = 23B84F5C23F5FE0A000A3D13 /* Talula.xcdatamodel */;
+			currentVersion = 23C70F4923F6BD1100C8E060 /* Talula.xcdatamodel */;
 			path = Talula.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

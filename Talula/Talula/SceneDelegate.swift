@@ -15,32 +15,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
-//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//        let contentView = ContentView().environment(\.managedObjectContext, context)
-//
-//        if let windowScene = scene as? UIWindowScene {
-//            let window = UIWindow(windowScene: windowScene)
-//            window.rootViewController = UIHostingController(rootView: contentView)
-//            self.window = window
-//            window.makeKeyAndVisible()
-//        }
-        
         guard let windowScene = scene as? UIWindowScene else {
             return
         }
         let window = UIWindow(windowScene: windowScene)
         let meteoriteStore = MeteoriteStore()
+        let delegate = MeteoriteFetchedResultsControllerDelegate(meteoriteStore: meteoriteStore)
+        let storage = MeteoriteStorage(delegate)
+        meteoriteStore.meteoriteModels = storage.fetchedResultsController.fetchedObjects?.compactMap {
+            MeteoriteModel(meteorite: $0)
+        } ?? []
         window.rootViewController = UIHostingController(rootView: MeteoriteListView().environmentObject(meteoriteStore))
         self.window = window
         window.makeKeyAndVisible()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        (UIApplication.shared.delegate as? AppDelegate)?.taskScheduler?.scheduleAppRefresh()
     }
-
-
 }
 
