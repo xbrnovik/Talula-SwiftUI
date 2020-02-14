@@ -71,7 +71,6 @@ struct AboutView : View {
                     Text("Icons")
                         .font(.title)
                     Text("This application uses free icons availables on certain websites. \nThe source of application icon is https://icons8.com/. \nThe source of other icons is https://www.flaticon.com/.")
-                    
                 }
                 .navigationBarTitle(Text("Information"))
                 .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))

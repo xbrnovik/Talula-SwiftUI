@@ -23,8 +23,8 @@ struct MeteoriteMapView : View {
     
 }
 
-//struct MeteoriteMapView_Previews : PreviewProvider {
-//    static var previews: some View {
-//        MeteoriteMapView()
-//    }
-//}
+struct MeteoriteMapView_Previews : PreviewProvider {
+    static var previews: some View {
+        MeteoriteMapView(meteorite: Meteorite())
+    }
+}

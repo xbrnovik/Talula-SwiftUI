@@ -9,21 +9,19 @@ import CoreData
 
 class MeteoriteFetchedResultsControllerDelegate: NSObject, NSFetchedResultsControllerDelegate {
     
-    var meteoriteStore: MeteoriteStore
+    var meteoriteModelContainer: MeteoriteModelContainer
     
-    init(meteoriteStore: MeteoriteStore) {
-        self.meteoriteStore = meteoriteStore
+    init(meteoriteModelContainer: MeteoriteModelContainer) {
+        self.meteoriteModelContainer = meteoriteModelContainer
     }
     
     /// Updates meteorites tableview with new content saved.
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        DispatchQueue.main.async { [weak self] in
-            guard let meteorites = controller.fetchedObjects as? [Meteorite] else {
-                return
-            }
-            self?.meteoriteStore.meteoriteModels = meteorites.compactMap {
-                MeteoriteModel(meteorite: $0)
-            }
+        guard let meteorites = controller.fetchedObjects as? [Meteorite] else {
+            return
+        }
+        meteoriteModelContainer.meteoriteModels = meteorites.compactMap {
+            MeteoriteModel(meteorite: $0)
         }
     }
 }

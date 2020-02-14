@@ -36,9 +36,8 @@ struct MapView: UIViewRepresentable {
     }
 }
 
-//struct MapView_Preview: PreviewProvider {
-//    static var previews: some View {
-//        MapView()
-//        MapView(latitude: 49.9, longitude: 16.6, annotationTitle: "Annotation title", annotationSubtitle: "Annotation subtitle")
-//    }
-//}
+struct MapView_Preview: PreviewProvider {
+    static var previews: some View {
+        MapView(latitude: 49.9, longitude: 16.6, annotationTitle: "Annotation title", annotationSubtitle: "Annotation subtitle")
+    }
+}

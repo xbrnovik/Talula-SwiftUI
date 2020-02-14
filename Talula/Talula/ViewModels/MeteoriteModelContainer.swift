@@ -1,5 +1,5 @@
 //
-//  MeteoriteStore.swift
+//  MeteoriteModelContainer.swift
 //  Talula
 //
 //  Created by Diana Brnovik on 13/02/2020.
@@ -9,8 +9,6 @@
 import SwiftUI
 import Combine
 
-class MeteoriteStore: ObservableObject {
-        
+class MeteoriteModelContainer: ObservableObject {
     @Published var meteoriteModels: [MeteoriteModel] = []
-    
 }

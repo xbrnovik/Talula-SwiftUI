@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct MeteoriteRow : View {
-    
     @ObservedObject var model: MeteoriteModel
     
     var body: some View {
@@ -30,6 +29,10 @@ struct MeteoriteRow : View {
             }
         }
     }
-    
 }
 
+struct MeteoriteRow_Previews: PreviewProvider {
+    static var previews: some View {
+        MeteoriteRow(model: MeteoriteModel(meteorite: Meteorite()))
+    }
+}

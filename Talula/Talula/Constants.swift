@@ -20,6 +20,7 @@ enum RowSize {
 }
 
 enum Name {
+    static let configuration = "Default Configuration"
     static let entity = "Meteorite"
     static let defaultDescriptorProperty = "mass"
     static let task = "cz.meteorites.refresh"

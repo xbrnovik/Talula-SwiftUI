@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct MeteoriteListView: View {
-    @EnvironmentObject var meteoriteStore: MeteoriteStore
+    @EnvironmentObject var meteoriteModelContainer: MeteoriteModelContainer
     @State var isPresentingModal: Bool = false
     
+    /// Prevents from showing empty lines in list.
     init() {
         UITableView.appearance().tableFooterView = UIView()
     }
@@ -20,7 +21,7 @@ struct MeteoriteListView: View {
         NavigationView {
             List {
                 Section(footer: ListFooter()) {
-                    ForEach(meteoriteStore.meteoriteModels) { model in
+                    ForEach(meteoriteModelContainer.meteoriteModels) { model in
                         MeteoriteRow(model: model)
                     }
                 }
@@ -51,10 +52,15 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct ListFooter: View {
-    @EnvironmentObject var meteoriteStore: MeteoriteStore
+    @EnvironmentObject var meteoriteModelContainer: MeteoriteModelContainer
     
     var body: some View {
-        Text(" \(meteoriteStore.meteoriteModels.count) meteorites")
+        Text("\(meteoriteModelContainer.meteoriteModels.count) meteorites")
     }
 }
 
+struct MeteoriteListView_Previews: PreviewProvider {
+    static var previews: some View {
+        MeteoriteListView()
+    }
+}
