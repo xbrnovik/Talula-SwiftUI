@@ -58,7 +58,6 @@ enum Icon: String {
     }
 }
 
-
 struct Formatter {
     struct numberFormatter {
         static let localeDecimal: NumberFormatter = {

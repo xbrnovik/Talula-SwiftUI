@@ -15,8 +15,8 @@ struct MeteoriteMapView : View {
     var body: some View {
         MapView(latitude: meteorite.latitude,
                 longitude: meteorite.longitude,
-                annotationTitle: meteorite.name ?? "",
-                annotationSubtitle: meteorite.geotype ?? "")
+                annotationTitle: meteorite.name ?? "Unknown",
+                annotationSubtitle: meteorite.geotype ?? "Unknown")
             .edgesIgnoringSafeArea(.all)
             .navigationBarTitle(Text("Map"))
     }

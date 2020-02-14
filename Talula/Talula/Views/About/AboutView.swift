@@ -80,6 +80,7 @@ struct AboutView : View {
     
 }
 
+// Example of preview
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
         AboutView()
