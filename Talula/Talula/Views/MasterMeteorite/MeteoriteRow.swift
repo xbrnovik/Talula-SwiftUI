@@ -30,9 +30,3 @@ struct MeteoriteRow : View {
         }
     }
 }
-
-struct MeteoriteRow_Previews: PreviewProvider {
-    static var previews: some View {
-        MeteoriteRow(model: MeteoriteModel(meteorite: Meteorite()))
-    }
-}

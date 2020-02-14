@@ -85,4 +85,3 @@ struct AboutView_Previews: PreviewProvider {
         AboutView()
     }
 }
-

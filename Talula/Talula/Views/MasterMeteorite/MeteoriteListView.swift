@@ -58,9 +58,3 @@ struct ListFooter: View {
         Text("\(meteoriteModelContainer.meteoriteModels.count) meteorites")
     }
 }
-
-struct MeteoriteListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MeteoriteListView()
-    }
-}
