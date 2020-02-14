@@ -17,11 +17,11 @@ class MeteoriteModel: ObservableObject, Identifiable {
     }
     var image: Image {
         if meteorite.mass >= 10000 {
-            return Image("BigMeteorite")
+            return Icon.meteoriteBig.image
         } else if meteorite.mass >= 1000 {
-            return Image("SmallMeteorite")
+            return Icon.meteoriteSmall.image
         } else {
-            return Image("OtherMeteorite")
+            return Icon.meteoriteOther.image
         }
     }
     var massFormatted: String? {

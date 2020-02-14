@@ -21,15 +21,15 @@ struct AboutView : View {
                           .fixedSize(horizontal: false, vertical: true)
                     HStack {
                         VStack(alignment: .leading, spacing: 20) {
-                            Image("BigMeteorite")
+                            Icon.meteoriteBig.image
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: IconSize.medium, height: IconSize.medium, alignment: .center)
-                            Image("SmallMeteorite")
+                            Icon.meteoriteSmall.image
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: IconSize.medium, height: IconSize.medium, alignment: .center)
-                            Image("OtherMeteorite")
+                            Icon.meteoriteOther.image
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: IconSize.medium, height: IconSize.medium, alignment: .center)
@@ -50,11 +50,11 @@ struct AboutView : View {
                         .fixedSize(horizontal: false, vertical: true)
                     HStack {
                         VStack(alignment: .leading, spacing: 20) {
-                            Image("InformationGmail")
+                            Icon.informationGmail.image
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: IconSize.medium, height: IconSize.mini, alignment: .center)
-                            Image("InformationLinkedIn")
+                            Icon.informationLinkedIn.image
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: IconSize.medium, height: IconSize.mini, alignment: .center)

@@ -46,6 +46,19 @@ enum Map {
     static let updateDelay: Int = 86400
 }
 
+enum Icon: String {
+    case meteoriteBig = "BigMeteorite"
+    case meteoriteSmall = "SmallMeteorite"
+    case meteoriteOther = "OtherMeteorite"
+    case informationGmail = "InformationGmail"
+    case informationLinkedIn = "InformationLinkedIn"
+    
+    var image: Image {
+        Image(rawValue)
+    }
+}
+
+
 struct Formatter {
     struct numberFormatter {
         static let localeDecimal: NumberFormatter = {
